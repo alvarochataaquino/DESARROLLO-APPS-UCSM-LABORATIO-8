@@ -1,0 +1,38 @@
+body {
+  background: #f4f7fa;
+  color: #000000;
+}
+
+.aplicacion {
+  max-width: 780px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #d6e0e8;
+  border-radius: 8px;
+  background: white;
+}
+
+h1 {
+  margin-top: 0;
+  color: #000000;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  margin-top: 24px;
+}
+
+@media (max-width: 650px) {
+  .aplicacion {
+    margin: 20px 14px;
+    padding: 22px;
+  }
+}

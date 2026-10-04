@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #10111a;
+  color: #f4f4f7;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.encabezado {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.encabezado h1 {
+  margin: 8px 0;
+  font-size: 2.4rem;
+}
+
+.encabezado p {
+  color: #b9b8c9;
+}
+
+.etiqueta {
+  color: #c8a8ff !important;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 18px;
+}
+
+.tarjeta {
+  padding: 22px;
+  border: 2px solid #343446;
+  border-radius: 14px;
+  background: #1d1d2b;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.tarjeta-seleccionada {
+  border-color: #b98cff;
+  transform: translateY(-5px);
+}
+
+.inicial {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 50%;
+  background: #60418b;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tarjeta h2 {
+  margin-bottom: 10px;
+}
+
+.tarjeta p {
+  line-height: 1.5;
+}
+
+.rasgo {
+  color: #d0b5ff;
+  font-weight: bold;
+}
+
+.tarjeta button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #b98cff;
+  color: #171020;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tarjeta button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+
+.resultado {
+  margin-top: 28px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #292638;
+  text-align: center;
+  font-weight: bold;
+}

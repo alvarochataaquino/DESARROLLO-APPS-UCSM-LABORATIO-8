@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eef2f7;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+header {
+  margin-bottom: 26px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
+  gap: 18px;
+}
+
+.tarjeta {
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 12px #00000014;
+}
+
+.tarjeta-superior {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tarjeta h2 {
+  margin: 0;
+}
+
+.estado {
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.operativa {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.en-uso {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.mantenimiento {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.malograda {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.tarjeta label {
+  display: block;
+  margin: 18px 0 6px;
+  font-weight: bold;
+}
+
+.tarjeta select {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #aab8ca;
+  border-radius: 7px;
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.acciones button {
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.acciones .boton-secundario {
+  background: #475569;
+}
+
+.detalles {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 7px;
+  background: #f1f5f9;
+}
+
+.detalles p {
+  margin: 6px 0;
+}

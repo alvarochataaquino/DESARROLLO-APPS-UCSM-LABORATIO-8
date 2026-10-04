@@ -1,0 +1,150 @@
+body {
+  background: #fff3f7;
+}
+
+.aplicacion {
+  width: min(1050px, 100%);
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.encabezado {
+  padding: 28px;
+  margin-bottom: 24px;
+  background: #9d3d68;
+  color: white;
+  border-radius: 6px;
+}
+
+.encabezado h1 {
+  margin: 0 0 10px;
+  font-size: clamp(26px, 5vw, 34px);
+}
+
+.encabezado p {
+  margin: 0;
+  line-height: 1.6;
+  color: #ffe5ef;
+}
+
+.panel-busqueda {
+  margin-bottom: 24px;
+}
+
+.panel-busqueda label {
+  display: block;
+  margin-bottom: 8px;
+  color: #643349;
+  font-weight: bold;
+}
+
+.panel-busqueda input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6a4ba;
+  border-radius: 4px;
+  background: white;
+  color: #4d293a;
+  font: inherit;
+}
+
+.panel-busqueda input:focus {
+  outline: 2px solid #9d3d68;
+  outline-offset: 2px;
+}
+
+.contador {
+  margin: 10px 0 0;
+  color: #775665;
+  font-size: 14px;
+}
+
+.lista-usuarios {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.tarjeta-usuario {
+  padding: 22px;
+  border: 1px solid #ead1dc;
+  border-top: 4px solid #c86d96;
+  border-radius: 4px;
+  background: white;
+}
+
+
+.avatar {
+  display: none;
+}
+
+.tarjeta-usuario h2 {
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0dce5;
+  color: #9d3d68;
+  font-size: 20px;
+}
+
+.datos-usuario {
+  margin: 0;
+}
+
+.datos-usuario div + div {
+  margin-top: 14px;
+}
+
+.datos-usuario dt {
+  margin-bottom: 4px;
+  color: #775665;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.datos-usuario dd {
+  margin: 0;
+  color: #4d293a;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.datos-usuario a {
+  color: #9d3d68;
+}
+
+.mensaje {
+  padding: 24px;
+  border: 1px solid #ead1dc;
+  border-radius: 4px;
+  background: white;
+  text-align: center;
+}
+
+.mensaje-error {
+  color: #972e2e;
+  border-color: #e0bcbc;
+  background: #fff5f5;
+}
+
+.pie {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid #ead1dc;
+  color: #775665;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .lista-usuarios {
+    grid-template-columns: 1fr;
+  }
+
+  .aplicacion {
+    padding: 20px 14px;
+  }
+
+  .encabezado {
+    padding: 22px;
+  }
+}
