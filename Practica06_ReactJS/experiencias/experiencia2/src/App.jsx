@@ -2,6 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import Header from './components/Header'
 import Card from './components/Card'
+import Footer from './components/Footer.jsx'
 
 const tecnologias = [
   {
@@ -62,6 +63,7 @@ function App() {
           ))}
         </section>
       </main>
+      <Footer/>
     </>
   )
 }
